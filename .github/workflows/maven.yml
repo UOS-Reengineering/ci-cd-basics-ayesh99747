@@ -6,7 +6,7 @@ on:
 
 jobs:
   build-and-test-on-ubuntu-jdk-17:
-    name: Run build and test on Ubuntu
+    name: Run build and test on Ubuntu with JDK-17
     runs-on: ubuntu-latest
 
     steps:
@@ -21,7 +21,7 @@ jobs:
       run: mvn -B package
 
   build-and-test-on-ubuntu-jdk-11:
-    name: Run build and test on Ubuntu
+    name: Run build and test on Ubuntu with JDK-11
     runs-on: ubuntu-latest
 
     steps:
@@ -36,7 +36,7 @@ jobs:
         run: mvn -B package
 
   build-and-test-on-macos-jdk-17:
-    name: Run build and test on Ubuntu
+    name: Run build and test on MacOS with JDK-17
     runs-on: macos-latest
 
     steps:
@@ -51,7 +51,7 @@ jobs:
         run: mvn -B package
 
   build-and-test-on-macos-jdk-11:
-    name: Run build and test on macos
+    name: Run build and test on MacOS with JDK-11
     runs-on: macos-latest
 
     steps:
